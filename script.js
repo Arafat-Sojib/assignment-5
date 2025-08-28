@@ -2,7 +2,7 @@ let heartCount = 0;
 let copyCount = 0;
 let coinCount = 100;
 
-function incrementHeart() {
+function increaseHeart() {
   heartCount++;
   document.getElementById("heartCount").textContent = heartCount;
 }
@@ -23,7 +23,7 @@ function callNumber(title, number) {
     const now = new Date();
     const timeStr = now.toLocaleTimeString();
     const container = document.createElement("div");
-    container.className = "flex justify-between items-center mt-2 border-1 border-gray-200 bg-gray-50 rounded-lg shadow-lg p-2";
+    container.className = "flex justify-between items-center mt-2 border border-gray-200 bg-gray-50 rounded-lg shadow-lg p-2";
 
     const leftPart = document.createElement("div");
     leftPart.innerHTML = `
